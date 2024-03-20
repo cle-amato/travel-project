@@ -1,4 +1,79 @@
-h1 {
-  font-family: "Poppins";
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/pienza-landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+header h1 {
   font-size: 96px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  letter-spacing: 5px;
+  font-size: 24px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+header a {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #272044;
+  background-color: white;
+  border: 1px solid #272044;
+  padding: 16px 32px;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 20px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  header a {
+    font-size: 7px;
+    padding: 8px 16px;
+    letter-spacing: 2px;
+  }
 }
