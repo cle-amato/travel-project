@@ -53,6 +53,48 @@ header a {
   margin-top: 32px;
 }
 
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/pienza-footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  color: white;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+footer ul {
+  padding: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer li {
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+}
+
+footer a,
+p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 @media (max-width: 800px) {
   header {
     padding: 20px 0;
