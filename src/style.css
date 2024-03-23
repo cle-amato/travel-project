@@ -53,6 +53,37 @@ header a {
   margin-top: 32px;
 }
 
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+main h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #272044;
+  margin: 10px 0;
+}
+
+main h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #d9d9d9;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+main p {
+  color: #272044;
+  opacity: 70%;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/pienza-footer.jpg");
@@ -66,7 +97,7 @@ footer {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 104px 0;
 }
 
 .footer-grid {
@@ -95,7 +126,7 @@ p {
   color: rgba(255, 255, 255, 0.8);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   header {
     padding: 20px 0;
   }
@@ -117,5 +148,18 @@ p {
     font-size: 7px;
     padding: 8px 16px;
     letter-spacing: 2px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  section {
+    padding: 10px 50px;
+  }
+
+  main img {
+    height: 500px;
   }
 }
