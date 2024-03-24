@@ -10,6 +10,12 @@ body {
   margin: 0 auto;
 }
 
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/pienza-landscape.jpg");
@@ -60,7 +66,7 @@ header a {
   grid-gap: 64px;
 }
 
-main img {
+.img-responsive {
   max-width: 100%;
   height: auto;
 }
@@ -72,7 +78,7 @@ main h3 {
   margin: 10px 0;
 }
 
-main h4 {
+main h2 {
   font-size: 16px;
   text-transform: uppercase;
   color: #d9d9d9;
@@ -80,9 +86,56 @@ main h4 {
   letter-spacing: 3px;
 }
 
+main h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #272044;
+  margin: 10px 0;
+}
+
+main h5 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #272044;
+  margin: 10px 0 5px 0;
+}
+
 main p {
   color: #272044;
   opacity: 70%;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
+}
+
+.card {
+  background-color: white;
+  padding: 24px 32px;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 25px 0;
+}
+
+.grid-btn {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: white;
+  background-color: #462cb2;
+  border: 1px solid #462cb2;
+  padding: 16px 32px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
 }
 
 footer {
@@ -91,14 +144,8 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 0;
+  padding: 0;
   color: white;
-}
-
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 90px 64px;
 }
 
 .footer-grid {
@@ -107,12 +154,9 @@ section {
   grid-gap: 64px;
 }
 
-footer {
-  padding: 0;
-}
-
 footer h3 {
   font-size: 20px;
+  color: white;
 }
 
 footer ul {
